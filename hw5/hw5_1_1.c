@@ -3,6 +3,7 @@
  * into partitions divided equally among the number of threads.
  * Each thread counts the number of characters and puts it in
  * global 1d array. List of occurrences of each character is printed.
+ * Race condition can occur due to lack of synchronization.
  */
 
 #include <stdio.h>

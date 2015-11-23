@@ -74,7 +74,7 @@ int main(int argc, char **argv) {
 			total += ascii[j][i];
 		
 		printf("\n%d occurrences of 0x%d ", total, i);
-		if (i >= 33 && i != 127)
+		if (i >= 33 && i != 127) // print ascii characters that are printable
 			printf("%c", i); 
 	}
 	

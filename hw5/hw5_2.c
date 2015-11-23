@@ -15,7 +15,7 @@ static pthread_mutex_t lock;
 static pthread_cond_t empty;
 static pthread_cond_t full;
 static int counter = 0;          // keep track of number of elements in buffer
-static int number_of_items;		 // number of items produced by each producer thread
+static int number_of_items;	   // number of items produced by each producer thread
 static int number_consumers;     // number of consumer threads
 static int number_producers;     // number of producer threads
 
@@ -62,7 +62,7 @@ void *consume(void *param) {
 int main(int argc, char **argv) {
 	
 	if (argc != 4) {
-		printf("Usage: ./%s producers consumers items", argv[0]);
+		printf("Usage: ./%s <producers> <consumers> <items>", argv[0]);
 		return 1;
 	}
 	int i;

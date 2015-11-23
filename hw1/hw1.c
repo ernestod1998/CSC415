@@ -10,10 +10,9 @@
 #define NAME "Ulises"
 #define BUFFER_SIZE 30
 
-int main(int argc, char** argv)
-{
+int main(int argc, char** argv) {
 	char str[BUFFER_SIZE];
-    sprintf(str, "Hello 415, I am %s!\n", NAME);
+     sprintf(str, "Hello 415, I am %s!\n", NAME);
 	write(STDOUT_FILENO, str, BUFFER_SIZE);  // STDOUT_FILENO = 1
 
 	return 0;

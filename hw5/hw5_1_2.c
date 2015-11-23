@@ -4,6 +4,7 @@
  * Each thread counts the number of characters and puts it in
  * global 1d array using a lock for synchronization. List of 
  * occurrences of each character is printed.
+ * Race condition cannot occur because of mutex lock.
  */
 
 #include <stdio.h>

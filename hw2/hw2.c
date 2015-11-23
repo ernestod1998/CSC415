@@ -1,6 +1,6 @@
 /* Ulises Martinez
- * Program copies the content of one file into
- * another file. 
+ * Program copies the content of one text file into
+ * another text file using a buffer. 
  */
  
 #include <stdlib.h>
@@ -38,13 +38,13 @@ ssize_t write_all(int fd, void *buffer, ssize_t num_bytes) {
 
 int main(int argc, char **argv) {
 	int fd1, // read content here
-		fd2; // copy content here
+	    fd2; // copy content here
 	ssize_t bytes_read, bytes_copied = 0;
 	char buffer[BUFFER_SIZE];
 
 	
 	if (argc != 3) {
-		printf("Need 2 files\n");
+		printf("Usage: ./ <file to copy> <file name with copied content>\n", %s);
 		return 1;
 	}
 
